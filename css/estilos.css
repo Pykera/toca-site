@@ -10,7 +10,7 @@ border: 0;
 body {
     margin: 0;
     font-family: "comic sans ms", cursive;
-    background: linear-gradient(124deg, #dd00f3, #e8b71d );
+/*     background: linear-gradient(124deg, #dd00f3, #e8b71d );
     background-size: 1800% 1800%;
 
     -webkit-animation: rainbow 15s ease infinite;
@@ -37,12 +37,16 @@ body {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
+    */
 }
-
 .container {
     width: 80%;
     margin: 0 auto;
 }
+
+
+
+
 
 header {
     background: linear-gradient(124deg, #e8b71d, #dd00f3);
@@ -137,4 +141,30 @@ nav a::before {
 
 nav a:hover::before {
     width: 100%;
+}
+
+.conteudo-background {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.44);
+    position: absolute;
+    width: 90%;
+    margin-left: 3vw;
+    margin-right: 0vw;
+    margin-top: 10vw;
+    
+}
+.texto {
+    opacity: 1;
+    color: white;
+    text-align: center
+}
+
+.texto-medio {
+    font-size: 20px;
+}
+
+.foto-home {
+    width: 70vw;
+    z-index: 2;
 }
