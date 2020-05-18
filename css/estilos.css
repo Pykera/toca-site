@@ -1,0 +1,140 @@
+/* reset css */
+
+*{
+margin: 0;
+padding: 0;
+border: 0;
+}
+/* Reset css end */
+
+body {
+    margin: 0;
+    font-family: "comic sans ms", cursive;
+    background: linear-gradient(124deg, #dd00f3, #e8b71d );
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 15s ease infinite;
+-z-animation: rainbow 15s ease infinite;
+-o-animation: rainbow 15s ease infinite;
+  animation: rainbow 15s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(124deg, #e8b71d, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 15s ease infinite;
+-z-animation: rainbow 15s ease infinite;
+-o-animation: rainbow 15s ease infinite;
+  animation: rainbow 15s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo-png {
+    float: left;
+    padding: 10px 0;
+    width: 60px;
+
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    margin-right: 20px;
+
+    position: relative;
+
+
+}
+
+nav a {
+    color: honeydew;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: dodgerblue;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition:  all ease-in-out 250ms;
+
+    
+}
+
+nav a:hover::before {
+    width: 100%;
+}
